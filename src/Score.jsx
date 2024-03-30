@@ -8,6 +8,7 @@ const Score = () => {
   useEffect(() => {
     localStorage.setItem("currentScore", JSON.stringify(score));
   }, [score]);
+
   return (
     <div>
       <h2>Your Current Score Is {score}</h2>
